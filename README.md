@@ -4,7 +4,7 @@ This project is an mock ordering APP For the Shokumotsu Cafe! This app allows th
 
 &emsp;
 
-<img src="" width="700">
+<img src="https://github.com/DashlinS/ShokumotsuCafe/blob/main/public/gif/baristademo.gif" width="700">
 
 <!-- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!]() -->
 
