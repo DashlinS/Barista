@@ -6,7 +6,7 @@ This project is an mock ordering APP For the Shokumotsu Cafe! This app allows th
 
 <img src="https://github.com/DashlinS/ShokumotsuCafe/blob/main/public/gif/baristademo.gif" width="700">
 
-<!-- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!]() -->
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!](https://shokumotsu-cafe.herokuapp.com/)
 
 ## How Its Made 
 
