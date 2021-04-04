@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/aa1a2a1c33.js" crossorigin="anonymous"></script>
+
+		<title>Shounen Cafe</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<header>
+		<nav>
+			<a href="/login" class="login">Admin</a>
+			<a href="/logout" class="login">Logout</a>
+		</nav>
+	</header>
+	<div class="mainTitle">
+		<h1>Shounen Cafe</h1>
+	</div>
+	<body>
+		<main>
+			<section class="menuContainer">
+				<ul class="mainList">
+					<ul class="menuOne box">
+						<h2>Food</h2>
+						<li>Naruto</li>
+						<li>Ramen</li>
+						<li>Okonomiyaki</li>
+						<li>Nabemono</li>
+						<!-- <li>Takoyaki</li> -->
+					</ul>
+					<ul class="menuTwo box">
+						<h2>Drinks</h2>
+						<li>Water</li>
+						<li>Matcha Latte</li>
+						<li>Green Tea</li>
+						<li>Sake</li>
+					</ul>
+					<ul class="menuThree box">
+						<h2>Deserts</h2>
+						<li>Mochi Ice cream</li>
+						<li>Red bean Paste</li>
+						<li>Yokan</li>
+						<li>Uiro</li>
+					</ul>
+				</ul>
+			</section>
+			<!-- <h3>May I take your order?</h3> -->
+			<form class="orders" action="/orders" method="post">
+				<input type="text" name="name" placeholder="Your Name">
+				<input type="text" name="order" placeholder="Your Order">
+				<button type="submit" name="button">Submit</button>
+			</form>
+			<section class="orderSection">
+
+				<section class="currentOrders">
+					<section class="screen">
+						<section class="title">Orders</section>
+						<ul>
+							<% uncompletedOrders.filter(order => !order.completed).forEach((order) => {%>
+								<li class="order">
+									<% if(loggedIn) { %>
+										<i class="far fa-check-circle complete-button" data-id="<%= order._id %>"></i>
+										<% } %>
+										<%= order.order %> for <%= order.name %>
+									</li>
+									<% }) %>
+								</ul>
+							</section>
+						</section>
+						<section class="completeOrders">
+							<section class="screen">
+							<section class="title">Completed</section>
+							<ul>
+								<% completedOrders.filter(order => order.completed).forEach((order) => {%>
+									<li class="order">
+										<% if(loggedIn) { %>
+											<i class="far fa-trash-alt delete-button" data-id="<%= order._id %>"></i>
+											<% } %>
+											<%= order.order %> for <%= order.name %>
+										</li>
+										<% }) %>
+									</ul>
+								</section>
+								</section>
+				</section>
+		</main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
