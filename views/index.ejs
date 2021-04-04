@@ -43,7 +43,7 @@
 					</ul>
 					<ul class="menuThree box">
 						<h2>Deserts</h2>
-						<li>Mochi Ice cream</li>
+						<li>Mochi Ice Cream</li>
 						<li>Red bean Paste</li>
 						<li>Yokan</li>
 						<li>Uiro</li>
@@ -60,7 +60,7 @@
 
 				<section class="currentOrders">
 					<section class="screen">
-						<section class="title">Orders</section>
+						<section class="title red">Orders</section>
 						<ul>
 							<% uncompletedOrders.filter(order => !order.completed).forEach((order) => {%>
 								<li class="order">
@@ -75,7 +75,7 @@
 						</section>
 						<section class="completeOrders">
 							<section class="screen">
-							<section class="title">Completed</section>
+							<section class="title green">Completed</section>
 							<ul>
 								<% completedOrders.filter(order => order.completed).forEach((order) => {%>
 									<li class="order">

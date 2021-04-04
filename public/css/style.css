@@ -66,38 +66,40 @@ body {
 
 nav {
   /* border: 1px solid red; */
-  height: 30px;
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   color: white;
+  /* border: 1px solid white; */
+  padding: 15px 30px;
+  background: url(/gif/sakura.gif) repeat center;
+  background-size: cover;
+  border-radius: 20px;
 }
 
 .mainTitle {
   display: flex;
-  height: 45px;
+  height: 55px;
   justify-content: center;
   margin-bottom: 40px;
 }
 
 nav a {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   border: 2px solid transparent;
   color: white;
   padding: 0px 20px;
 }
 
-nav a:hover {
-  border: 2px solid white;
-}
 
 main {
   /* border: 2px solid blue; */
-  height: 85vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -157,6 +159,7 @@ main {
   align-items: center;
   background: url(/images/pos.png) no-repeat center;
   background-size: 570px;
+  text-align: center;
 }
 .screen {
   width: 330px;
@@ -201,4 +204,44 @@ button {
 }
 h3 {
   font-size: 1.8rem;
+}
+
+.green {
+  color: rgb(7, 255, 7);
+}
+
+.red {
+  color: red;
+}
+
+.fa-check-circle:before {
+    content: "\f058";
+    color:rgb(3, 255, 3);
+}
+
+.fa-trash-alt:before {
+  color: red;
+}
+
+ i {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    }
+
+i:hover {
+    animation-name: bounce-5;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-5 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-5px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-5px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
 }
